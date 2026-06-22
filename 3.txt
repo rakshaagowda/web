@@ -1,0 +1,94 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Frame 1</title> 
+</head> 
+<body style="background-color: #f39c12; color: white; font-family: Arial, sans-serif; 
+text-align: center; margin: 0; padding: 20px;"> 
+    <h1>Frame 1</h1> 
+    <p style="font-size: 18px;">Top Left Section</p> 
+</body> 
+</html> 
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>4-Frame Webpage Layout</title> 
+</head> 
+ 
+<frameset rows="50%,50%"> 
+    <frameset cols="50%,50%"> 
+        <frame src="frame1.html" name="frame1"> 
+        <frame src="frame2.html" name="frame2"> 
+    </frameset> 
+    <frameset cols="50%,50%"> 
+        <frame src="frame3.html" name="frame3"> 
+        <frame src="frame4.html" name="frame4"> 
+    </frameset> 
+</frameset> 
+ 
+</html> 
