@@ -57,98 +57,109 @@
 
 
 
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>Registration Validation</title>
-    <style type="text/css">
-      body {
-        font-family: Arial, sans-serif;
-        background: #e3f2fd;
-        padding: 30px;
-        text-align: center;
-      }
-      h2 {
-        color: #1976d2;
-      }
-      form {
-        background: #fff;
-        padding: 20px;
-        display: inline-block;
-        border-radius: 8px;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-      }
-      input[type="text"],
-      input[type="password"] {
-        padding: 8px;
-        margin: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-      input[type="button"] {
-        background: #1976d2;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-      }
-    </style>
+<head>
+    <title>Registration Form Validation</title>
+
     <script type="text/javascript">
-      function validate() {
-        var uid = document.getElementById("uid").value;
-        var name = document.getElementById("name").value;
-        var pass = document.getElementById("pass").value;
-        var email = document.getElementById("email").value;
+        function validateForm() {
 
-        if (uid.length < 5 || uid.length > 12) {
-          alert("User ID must be 5-12 characters.");
-          return false;
-        }
-        if (!/^[A-Za-z ]{8,}$/.test(name)) {
-          alert("Name must be alphabets only & at least 8 characters.");
-          return false;
-        }
-        if (!/^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[a-zA-Z0-9]).{8}$/.test(pass)) {
-          alert("Password must be 8 chars, incl. 1 uppercase, 1 special char.");
-          return false;
-        }
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          alert("Invalid Email.");
-          return false;
-        }
+            var userid = document.getElementById("userid").value;
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+            var email = document.getElementById("email").value;
 
-        alert("Registration Successful!");
-      }
+            if (userid.length < 5 || userid.length > 12) {
+                alert("User ID must be between 5 and 12 characters.");
+                return false;
+            }
+
+          
+            var namePattern = /^[A-Za-z\s]+$/;
+
+            if (!namePattern.test(name)) {
+                alert("Name should contain only alphabets.");
+                return false;
+            }
+
+            if (name.length < 15) {
+                alert("Name should be at least 15 characters long.");
+                return false;
+            }
+
+            var passwordPattern =
+                /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[A-Za-z])(?=.*[0-9]).{8,}$/;
+
+            if (!passwordPattern.test(password)) {
+                alert("Password must contain at least 8 characters, one uppercase letter, one special character and one number.");
+                return false;
+            }
+
+          
+            var emailPattern =
+                /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (!emailPattern.test(email)) {
+                alert("Invalid Email Address.");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            return true;
+        }
     </script>
-  </head>
 
-  <body>
-    <h2>User Registration</h2>
-    <form action="#">
-      <input type="text" id="uid" placeholder="User ID" /><br />
-      <input type="text" id="name" placeholder="Full Name" /><br />
-      <input type="password" id="pass" placeholder="Password" /><br />
-      <input type="text" id="email" placeholder="Email" /><br />
-      <input type="button" value="Register" onclick="validate()" />
-    </form>
-  </body>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <form onsubmit="return validateForm();">
+
+            <label>User ID:</label>
+            <input type="text" id="userid" />
+            <br /><br />
+
+            <label>Name:</label>
+            <input type="text" id="name" />
+            <br /><br />
+
+            <label>Password:</label>
+            <input type="password" id="password" />
+            <br /><br />
+
+            <label>E-mail:</label>
+            <input type="text" id="email" />
+            <br /><br />
+
+            <input type="submit" value="Register" />
+            <input type="reset" value="Reset" />
+
+        </form>
+    </div>
+</body>
 </html>
+```
