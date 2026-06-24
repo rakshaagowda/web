@@ -50,167 +50,183 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Department Timetable</title>
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        h2, h3, p {
+            text-align: center;
+        }
+    </style>
 </head>
-<body background="https://central.sjceplacements.org/campus/admin.jpg">
+<body>
 
-<table width="100%" bgcolor="#003366" cellpadding="10">
-    <tr>
-        <td align="center">
-            <font color="white" size="6"><b>UNIVERSITY OF TECHNOLOGY</b></font><br>
-            <font color="white" size="4">Department of Computer Science</font><br>
-            <font color="white" size="3">Academic Year 2023-2024</font>
-        </td>
-    </tr>
-</table>
+    <h2>JSS SCIENCE AND TECHNOLOGY UNIVERSITY</h2>
+    <h3>Department of Computer Science and Engineering</h3>
+    <p>TIME TABLE FOR THE ACADEMIC YEAR 2023-2024 (EVEN SEMESTER)</p>
 
-<table width="100%" bgcolor="#004080" cellpadding="8">
-    <tr>
-        <td align="center">
-            <a href="#timetable"><font color="white">Timetable</font></a> |
-            <a href="#courses"><font color="white">Courses</font></a> |
-            <a href="#faculty"><font color="white">Faculty</font></a>
-        </td>
-    </tr>
-</table>
+    <p><b>Semester:</b> VI &nbsp;&nbsp;
+       <b>Section:</b> E &nbsp;&nbsp;
+       <b>Room No:</b> IS Seminar Hall
+    </p>
 
-<h3 align="center" style="color: black;">Class Timetable</h3>
-<table border="1" align="center" width="90%" cellpadding="10" bgcolor="white" id="timetable">
-    <tr bgcolor="#cccccc">
-        <th>Time/Day</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-    </tr>
-    <tr>
-        <td align="center">9:00 - 10:00</td>
-        <td align="center">CS101<br>Dr. Smith</td>
-        <td align="center">MATH201<br>Dr. Johnson</td>
-        <td align="center">CS101<br>Dr. Smith</td>
-        <td align="center">MATH201<br>Dr. Johnson</td>
-        <td align="center">-</td>
-    </tr>
-    <tr>
-        <td align="center">10:00 - 11:00</td>
-        <td align="center">CS205<br>Prof. Brown</td>
-        <td align="center">PHY101<br>Dr. Wilson</td>
-        <td align="center">CS205<br>Prof. Brown</td>
-        <td align="center">PHY101<br>Dr. Wilson</td>
-        <td align="center">-</td>
-    </tr>
-    <tr>
-        <td align="center">11:00 - 12:00</td>
-        <td colspan="5" align="center" bgcolor="#fdd">Lab Sessions</td>
-    </tr>
-    <tr>
-        <td align="center">12:00 - 1:00</td>
-        <td colspan="5" align="center" bgcolor="#dfd">Lunch Break</td>
-    </tr>
-</table>
+    <table>
+        <tr>
+            <th>DAY</th>
+            <th>07:30-08:30</th>
+            <th>08:30-09:30</th>
+            <th>09:30-10:30</th>
+            <th>10:30-11:00</th>
+            <th>11:00-11:50</th>
+            <th>11:50-12:40</th>
+            <th>12:40-01:30</th>
+            <th>01:30-02:30</th>
+            <th>02:30-03:30</th>
+            <th>03:30-04:30</th>
+            <th>04:30-05:30</th>
+        </tr>
 
-<h3 align="center" style="color:black;">Course Information</h3>
-<table border="1" align="center" width="80%" cellpadding="8" bgcolor="white" id="courses">
-    <tr bgcolor="#004080">
-        <th><font color="white">Course Code</font></th>
-        <th><font color="white">Course Title</font></th>
-        <th><font color="white">Credits</font></th>
-    </tr>
-    <tr>
-        <td align="center">CS101</td>
-        <td>Introduction to Programming</td>
-        <td align="center">3</td>
-    </tr>
-    <tr>
-        <td align="center">MATH201</td>
-        <td>Calculus I</td>
-        <td align="center">4</td>
-    </tr>
-    <tr>
-        <td align="center">CS205</td>
-        <td>Data Structures and Algorithms</td>
-        <td align="center">3</td>
-    </tr>
-    <tr>
-        <td align="center">PHY101</td>
-        <td>Physics for Computer Science</td>
-        <td align="center">4</td>
-    </tr>
-</table>
+        <tr>
+            <td>MON</td>
+            <td></td>
+            <td></td>
+            <td>OE-II</td>
+            <td rowspan="6">BREAK</td>
+            <td>20CS641/642/643</td>
+            <td>20HU612</td>
+            <td>20CS610</td>
+            <td rowspan="6">BREAK</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-<h3 align="center" style="color:black;">Faculty Information</h3>
-<table border="1" align="center" width="80%" cellpadding="8" bgcolor="white" id="faculty">
-    <tr bgcolor="#004080">
-        <th><font color="white">Name</font></th>
-        <th><font color="white">Department</font></th>
-        <th><font color="white">Office</font></th>
-    </tr>
-    <tr>
-        <td>Dr. Smith (DS)</td>
-        <td>Computer Science</td>
-        <td align="center">Room 301</td>
-    </tr>
-    <tr>
-        <td>Dr. Johnson (JJ)</td>
-        <td>Mathematics</td>
-        <td align="center">Room 205</td>
-    </tr>
-    <tr>
-        <td>Prof. Brown (BB)</td>
-        <td>Computer Science</td>
-        <td align="center">Room 302</td>
-    </tr>
-    <tr>
-        <td>Dr. Wilson (WW)</td>
-        <td>Physics</td>
-        <td align="center">Room 401</td>
-    </tr>
-</table>
+        <tr>
+            <td>TUE</td>
+            <td></td>
+            <td></td>
+            <td>OE-III</td>
+            <td>20CS610</td>
+            <td>20CS620</td>
+            <td>20HU612</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-<table width="100%" bgcolor="#003366" cellpadding="10">
-    <tr>
-        <td align="center">
-            <font color="white" size="2">
-                University of Technology<br>
-                Department of Computer Science<br>
-                Contact: +1 (555) 123-4567 | Email: cs.department@university.edu
-            </font>
-        </td>
-    </tr>
-</table>
+        <tr>
+            <td>WED</td>
+            <td></td>
+            <td>20CS641/642/643</td>
+            <td>OE-II</td>
+            <td colspan="3">20CS630P HW LAB</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>THU</td>
+            <td></td>
+            <td>20CS630</td>
+            <td>OE-III</td>
+            <td colspan="3">20CS67L / 20CS68L LAB</td>
+            <td>20CS630</td>
+            <td>20CS610</td>
+            <td>20CS620</td>
+        </tr>
+
+        <tr>
+            <td>FRI</td>
+            <td></td>
+            <td>20CS641/642/643</td>
+            <td>OE-II</td>
+            <td>20CS630</td>
+            <td>20CS610</td>
+            <td>20CS620</td>
+            <td colspan="2">20CS630P HW LAB</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>SAT</td>
+            <td></td>
+            <td></td>
+            <td>OE-III</td>
+            <td colspan="3">20CS67L / 20CS68L LAB</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>Course Details</h3>
+
+    <table>
+        <tr>
+            <th>Subject Code</th>
+            <th>Subject Name</th>
+            <th>Credits</th>
+            <th>Instructor</th>
+        </tr>
+
+        <tr>
+            <td>20CS610</td>
+            <td>Machine Learning</td>
+            <td>4</td>
+            <td>Prof. SNM</td>
+        </tr>
+
+        <tr>
+            <td>20CS620</td>
+            <td>Web Technology</td>
+            <td>3</td>
+            <td>Prof. VS</td>
+        </tr>
+
+        <tr>
+            <td>20CS630</td>
+            <td>Internet of Things</td>
+            <td>3</td>
+            <td>Prof. SGC</td>
+        </tr>
+
+        <tr>
+            <td>20CS67L</td>
+            <td>Machine Learning Lab</td>
+            <td>1.5</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>20CS68L</td>
+            <td>Web Technology Lab</td>
+            <td>1.5</td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p><b>Dr. Srinath S</b> - HOD, Dept. of CS&E</p>
+        <p><b>Dr. C Nataraju</b> - Principal, JSSSTU</p>
+    </footer>
 
 </body>
 </html>
