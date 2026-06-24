@@ -1,141 +1,136 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>My Resume</title>
 </head>
 
-<body style="font-family: Arial, sans-serif; background-color: #141313; color: #333;
-margin: 0; padding: 20px;">
-    <div style="max-width: 800px; margin: auto; background-color: #fff; padding: 30px;
-border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-        <!-- Profile Image -->
+<body style="font-family: Arial, sans-serif; background-color: white; color: gray; margin: 0; padding: 20px;">
+
+    <div style="max-width: 800px; margin: auto; background-color: white; padding: 30px; border-radius: 10px;">
+
+       
         <div style="text-align: center;">
-            <img src="https://giftolexia.com/wp-content/uploads/2015/11/dummy-profile.png" alt="Profile Picture" style="border-radius: 50%;
-width: 150px; height: 150px;">
+            <img src="https://giftolexia.com/wp-content/uploads/2015/11/dummy-profile.png"
+                 alt="Profile Picture"
+                 style="border-radius: 50%; width: 150px; height: 150px;">
         </div>
-        <!-- Name & Title -->
-        <h1 style="color: #2c3e50; text-align: center; margin-top: 10px;">John Doe</h1>
-        <!-- Contact Info -->
+
+        
+        <h1 style="text-align: center; color: #2c3e50;">John Doe</h1>
+
+       
         <p style="text-align: center; font-size: 16px;">
-             <a href="mailto:johndoe@gmail.com" style="color: #3498db; text-decoration:
-none;">johndoe@gmail.com</a> |
-             +91 9876543210 |
-            <a href="https://yourwebsite.com" target="_blank" style="color: #3498db;
-text-decoration: none;">yourwebsite.com</a>
+            📧
+            <a href="mailto:johndoe@gmail.com" style="color: blue;">
+                johndoe@gmail.com
+            </a>
+            |
+             +91 9876543210
+            |
+            
+            <a href="https://yourwebsite.com" target="_blank"
+               style="color: blue;">
+                yourwebsite
+            </a>
         </p>
-        <hr style="border: 1px solid #ddd;">
-        <!-- Objective -->
+
+        <hr>
+
         <h2 style="color: #2c3e50;">Career Objective</h2>
         <p style="font-size: 16px; line-height: 1.6;">
-            I am a passionate <b>Web Developer</b> eager to leverage my skills in HTML,
-            CSS, and JavaScript to build modern and responsive websites.
-            I aim to continuously learn and grow while contributing to dynamic and
-            innovative projects.
+            I am a passionate <b>Computer Science Engineering Student</b>
+            with a strong interest in <b>Web Development</b>,
+            <b>Programming.</b>
+            I aim to contribute my technical skills and creativity to
+            build innovative solutions while continuously enhancing my knowledge.
+            <br><br>
+           
         </p>
-        <!-- Education -->
+
         <h2 style="color: #2c3e50;">Education</h2>
-        <ul style="font-size: 16px; line-height: 1.6;">
-            <li><b>Bachelor of Computer Applications (BCA)</b> — XYZ University, 2020-
-                2023</li>
-            <li><b>Higher Secondary School</b> — ABC School, 2018-2020</li>
+        <ul style="font-size: 16px; line-height: 1.8;">
+            <li>
+                <b>Bachelor of Engineering (Computer Science & Engineering)</b><br>
+                JSS Science and Technology University, Mysuru<br>
+                2023 - 2027
+            </li>
+            <li>
+                <b>Higher Secondary Education (PUC)</b><br>
+                ABC College<br>
+                2021 - 2023
+            </li>
+            
         </ul>
-        <!-- Skills -->
-        <h2 style="color: #2c3e50;">Skills</h2>
+
+       
+        <h2 style="color: #2c3e50;">Technical Skills</h2>
 
         <p style="font-size: 16px;">
-            <b>Languages:</b> HTML, CSS, JavaScript, C++<br>
-            <b>Tools:</b> VS Code, Git, Canva<br>
-            <b>Soft Skills:</b> Communication, Problem Solving, Teamwork
+            <b>Programming Languages:</b> C, C++, Java, Python<br>
+            <b>Web Technologies:</b> HTML, CSS, JavaScript<br>
+            <b>Database:</b> MySQL, SQLite<br>
+            <b>Tools:</b> VS Code, Git, GitHub, Canva<br>
+            <u>Soft Skills:</u> Communication, Leadership,
+            Problem Solving, Teamwork
         </p>
-        <!-- Projects -->
+
+       
         <h2 style="color: #2c3e50;">Projects</h2>
-        <ul style="font-size: 16px; line-height: 1.6;">
-            <li><b>Personal Portfolio Website:</b> Designed and developed a responsive
-                portfolio site using HTML, CSS, and JavaScript.</li>
-            <li><b>Student Feedback Form:</b> Created an interactive form collecting
-                student feedback using HTML and inline styles.</li>
+
+        <ul style="font-size: 16px; line-height: 1.8;">
+            <li>
+                <b>Personal Portfolio Website</b><br>
+                Designed and developed a responsive personal portfolio
+                website using HTML, CSS, and JavaScript.
+            </li>
+
+            <li>
+                <b>Student Feedback Form</b><br>
+                Developed an interactive feedback collection system using
+                HTML forms and CSS styling.
+            </li>
+
+            
         </ul>
-        <!-- Hobbies -->
-        <h2 style="color: #2c3e50;">Hobbies</h2>
-        <p style="font-size: 16px;">Drawing, Reading Novels, Blogging, and Coding</p>
-        <!-- Declaration -->
-        <h2 style="color: #2c3e50;">Declaration</h2>
+
+       
+        <h2 style="color: #2c3e50;">Achievements</h2>
+
+        <ul style="font-size: 16px; line-height: 1.8;">
+            <li>Participated in various coding competitions.</li>
+            <li>Completed online certification courses in Web Development.</li>
+           
+        </ul>
+
+    
+        <h2 style="color: #2c3e50;">Hobbies & Interests</h2>
+
         <p style="font-size: 16px;">
-            I hereby declare that all the information mentioned above is true and correct
-            to the best of my knowledge.
+            Reading Novels, Coding, Blogging, Drawing, Listening to Music.
         </p>
+
+        
+        <h2 style="color: #2c3e50;">Personal Details</h2>
+
+       
+
+        
+        <h2 style="color: #2c3e50;">Declaration</h2>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+            I hereby declare that all the information provided above is true
+            and correct to the best of my knowledge and belief.
+        </p>
+
         <br>
-        <!-- Signature -->
+
+        
         <p style="text-align: right; font-size: 16px;">
             <b>John Doe</b><br>
-            Date: 21-Apr-2025
+            Date: 24-06-2026
         </p>
-    </div>
-</body>
 
+    </div>
+
+</body>
 </html>
